@@ -77,17 +77,14 @@ let myCar = {
 
 function isStopped(car) {
 
-
+    let stopped = false
+    console.log(car);
     if (myCar.moving === false) {
-        return true
-    }
+        stopped = true
+    } else { stopped = false }
 
 
-
-    if (myCar.moving === true) {
-        return false
-    }
-
+    return stopped
 }
 
 
